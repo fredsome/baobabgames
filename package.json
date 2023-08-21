@@ -1,6 +1,6 @@
 {
   "homepage": "https://fredsome.github.io/baobabgames",
-  "name": "BaobabGames-Website",
+  "name": "baobabgames",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
