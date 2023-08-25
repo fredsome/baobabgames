@@ -36,7 +36,7 @@ export const Footer = () => {
               <a href="https://www.tiktok.com/@baobab_games?is_from_webapp=1&sender_device=pc"><img src={navIcon3} alt="Icon" /></a>
               <a onClick={handleClickMail}><img src={navIcon4} alt="" /></a>
             </div>
-            <p>Copyright 2023. All Rights Reserved</p>
+            <p>Copyright © 2023 Baobab Games - All Rights Reserved.</p>
           </Col>
         </Row>
       </Container>

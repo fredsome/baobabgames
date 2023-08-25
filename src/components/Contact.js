@@ -67,7 +67,7 @@ export const Contact = () => {
 
                            <div className="cardprofile">
                            <img src={meter3} />
-                           <h1>Laeticia </h1>
+                           <h1>Laetitia </h1>
                            <p class="titleprofile">3D Artist</p>
                            <div className="social-icon">
                            <a href="https://www.linkedin.com/in/laetitia-morand-0a0767165/"><img src={navIcon1} alt="" /></a>
