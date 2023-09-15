@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Col, Row, Alert } from "react-bootstrap";
-
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 export const Newsletter = ({ status, message, onValidated }) => {
   const [email, setEmail] = useState('');
 
@@ -26,7 +27,12 @@ export const Newsletter = ({ status, message, onValidated }) => {
         <div className="newsletter-bx wow slideInUp">
           <Row>
             <Col lg={12} md={6} xl={5}>
+            <TrackVisibility>
+              {({ isVisible }) =>
+              <div className={isVisible ? "animate__animated animate__pulse": ""}>
               <h3>Subscribe to our Newsletter<br></br> & Never miss latest updates</h3>
+              </div>}
+            </TrackVisibility>
               {status === 'sending' && <Alert>Sending...</Alert>}
               {status === 'error' && <Alert variant="danger">{message}</Alert>}
               {status === 'success' && <Alert variant="success">{message}</Alert>}

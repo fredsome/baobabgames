@@ -6,7 +6,8 @@ import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
-
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
@@ -35,8 +36,12 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>About</h2>
+                        <TrackVisibility>
+              {({ isVisible }) =>
+              <div className={isVisible ? "animate__animated animate__bounceInRight": ""}>
                         <p>Baobab Games is an independent video game studio working to represent cultural diversity around the world. We bring together millions of players around the world in atypical multiplayer universes by allowing them to relive moments that have marked history.</p>
-                        
+                        </div>}
+            </TrackVisibility>
                     </div>
                 </div>
             </div>

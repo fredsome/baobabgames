@@ -23,7 +23,7 @@ export const Footer = () => {
         <Row>
           <Col size={8} sm={4}>
             <img src={laGuilde} alt="LaGuilde" />
-            <h3>Parteners</h3>
+            <h3>Partners</h3>
           </Col>
           <Col size={8} sm={4}>
             <img src={logo} alt="Logo" />

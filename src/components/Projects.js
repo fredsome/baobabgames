@@ -71,16 +71,22 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col size={12}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
+            
                 <h2>Projects</h2>
+                <TrackVisibility>
+              {({ isVisible }) =>
+              <div className={isVisible ? "animate__animated animate__pulse": ""}>
                 <p>Dion is a multiplayer survival game set in a fantastic world inspired by West African Empires.
 
 Step into the shoes of an hunter and embark on daring raids to obtain powerful sorcery artifacts as well as technologies from other eras.</p>
+</div>}
+            </TrackVisibility>
+            <TrackVisibility>
+              {({ isVisible }) =>
+              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                  
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                  <Tab.Content id="slideInUp" >
                     <Tab.Pane eventKey="first">
                       <Row>
                         {

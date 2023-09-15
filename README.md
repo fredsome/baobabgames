@@ -30,3 +30,8 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 
+### `guide de deployement apres avoir ajouté des modifications au site`
+-push les modifications
+-lancer "npm run deploy"
+-Aller sur github ->parametres->pages->s'assurer que au dessu de la page est ecrit : Your site is live at https://www.baobabgames.ca/
+-Aller sur github ->parametres->pages->s'assurer->ajouter www.baobabgames.ca dans custom domain
