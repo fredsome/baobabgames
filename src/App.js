@@ -11,6 +11,9 @@ import { Footer } from "./components/Footer";
 function App() {
   return (
     <div className="App">
+       <title>baobabgames</title>
+       <meta name="description" content= "Baobab Games is an independent video game studio working to represent cultural diversity around the world. We bring together millions of players around the world in atypical multiplayer universes by allowing them to relive moments that have marked history."></meta>
+     
       <NavBar />
       <Banner />
       <Skills />

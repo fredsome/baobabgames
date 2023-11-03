@@ -689,11 +689,12 @@ button:hover, a:hover {
 }
 .new-email-bx button {
   background: linear-gradient(90.21deg, #e0dbd4 -5.91%, #ffa200 111.58%);
-  padding: 20px 65px;
+  padding: 2% 10%;
   color: #fff;
   font-weight: 500;
   letter-spacing: 0.5px;
   border-radius: 18px;
+  
 }
 .footer img {
   width: 26%;

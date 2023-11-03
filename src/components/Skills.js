@@ -35,10 +35,11 @@ export const Skills = () => {
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
+                   
                         <h2>About</h2>
                         <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__bounceInRight": ""}>
+              <div className={isVisible ? "animate__animated animate__pulse": ""}>
                         <p>Baobab Games is an independent video game studio working to represent cultural diversity around the world. We bring together millions of players around the world in atypical multiplayer universes by allowing them to relive moments that have marked history.</p>
                         </div>}
             </TrackVisibility>

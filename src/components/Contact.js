@@ -41,7 +41,7 @@ export const Contact = () => {
                         <h2>Team</h2>
                         <TrackVisibility>
               {({ isVisible }) =>
-                        <div className={isVisible ? "animate__animated animate__slideInUp" : ""}> 
+                        <div className={isVisible ? "animate__animated animate__pulse" : ""}> 
                         <p>At Baobab Games, we want to reproduce historical periods unknown to the general public and the industry with the help of our Engineers, historians and our artists. Through our games, our mission is to immerse our players in universes with diverse landscapes and cultures while allowing them to get closer and have fun.</p>
                         <h2></h2>
                          </div>}
