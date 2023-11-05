@@ -38,7 +38,7 @@ export const Contact = () => {
             <div className="row">
                 <div className="col-12">
                     <div className="team-bx  wow zoomIn" >
-                        <h2>Team</h2>
+                        <h1>Team</h1>
                         <TrackVisibility>
               {({ isVisible }) =>
                         <div className={isVisible ? "animate__animated animate__pulse" : ""}> 
@@ -52,7 +52,7 @@ export const Contact = () => {
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                            <div className="cardprofile">
                            <img src={meter1} />
-                           <h1>Antabon Some</h1>
+                           <h3>Antabon Some</h3>
                            <p class="titleprofile">Founder & Lead Programmer</p>
                            <div className="social-icon">
                            <a href="https://www.linkedin.com/in/antabon-freddy-some-a2b1521ba"><img src={navIcon1} alt="" /></a>
@@ -64,7 +64,7 @@ export const Contact = () => {
 
                            <div className="cardprofile">
                            <img src={meter2} />
-                           <h1>Darlene Acouetey</h1>
+                           <h3>Darlene Acouetey</h3>
                            <p class="titleprofile">Concept Artist</p>
                            <div className="social-icon">
                            <a href="https://www.linkedin.com/in/darlene-acouetey-29790025a/"><img src={navIcon1} alt="" /></a>
@@ -75,7 +75,7 @@ export const Contact = () => {
 
                            <div className="cardprofile">
                            <img src={meter3} />
-                           <h1>Laetitia </h1>
+                           <h3>Laetitia </h3>
                            <p class="titleprofile">3D Artist</p>
                            <div className="social-icon">
                            <a href="https://www.linkedin.com/in/laetitia-morand-0a0767165/"><img src={navIcon1} alt="" /></a>

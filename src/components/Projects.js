@@ -21,47 +21,47 @@ export const Projects = () => {
   const projects = [
     {
       title: "",
-      description: "",
+      description: "Baobab Games",
       imgUrl: projImg1,
     },
     {
       title: "",
-      description: "",
+      description: "Baobab Games",
       imgUrl: projImg5,
     },
     {
       title: "",
-      description: "",
+      description: "Baobab Games",
       imgUrl: projImg2,
     },
     {
       title: "",
-      description: "",
+      description: "Baobab Games",
       imgUrl: projImg10,
     },
     {
       title: "",
-      description: "",
+      description: "Baobab Games",
       imgUrl: logoDion,
     },
     {
       title: "",
-      description: "",
+      description: "Baobab Games",
       imgUrl: projImg9,
     },
     {
       title: "",
-      description: "",
+      description: "Baobab Games",
       imgUrl: projImg3,
     },
     {
       title: "",
-      description: "",
+      description: "Baobab Games",
       imgUrl: projImg11,
     },
     {
       title: "",
-      description: "",
+      description: "Baobab Games",
       imgUrl: projImg6,
     },
   ];
@@ -71,12 +71,12 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col size={12}>
-      
-                <h2>Projects</h2>
+          <div className="team-bx  wow zoomIn" >
+                <h1>Projects</h1>
                 <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__pulse": ""}>
-                <p>Baobab Games creator of Dion which is a multiplayer survival game set in a fantastic world inspired by West African Empires.
+                <p>Baobab Games is the creator of Dion which is a multiplayer survival game set in a fantastic world inspired by West African Empires.
 
 Step into the shoes of an hunter and embark on daring raids to obtain powerful sorcery artifacts as well as technologies from other eras.</p>
 </div>}
@@ -106,6 +106,7 @@ Step into the shoes of an hunter and embark on daring raids to obtain powerful s
                 </Tab.Container>
               </div>}
             </TrackVisibility>
+            </div>
           </Col>
         </Row>
       </Container>

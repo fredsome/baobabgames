@@ -36,7 +36,7 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                    
-                        <h2>About</h2>
+                        <h1>About</h1>
                         <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__pulse": ""}>
