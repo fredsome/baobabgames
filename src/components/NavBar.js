@@ -5,11 +5,15 @@ import navIcon1 from '../assets/SocialIcons/nav-icon1.svg';
 import navIcon2 from '../assets/SocialIcons/twitter.svg';
 import navIcon3 from '../assets/SocialIcons/tiktok.svg';
 import navIcon4 from '../assets/SocialIcons/mail2.svg';
+import React, { useContext } from "react";
+import { LanguageContext } from "./contextLang";
 
-
+import traduction from './traduction';
 import {
   BrowserRouter as Router
 }from "react-router-dom";
+import { Skills } from "./Skills";
+
 
 
 export const NavBar = () => {
@@ -43,7 +47,22 @@ const handleClickMail = () => {
   window.open('mailto:support@baobabgames.group?subject=Subject&body=Body%20goes%20here');
   
   }
+  const {switchLanguage} = useContext(LanguageContext);
+ // Déclarer l'état local pour le texte du bouton
+ const [buttonText, setButtonText] = useState('EN');
 
+ // Gestionnaire d'événements de clic pour le bouton
+ const handleClick = () => {
+   // Condition pour changer le texte du bouton
+   if (buttonText === 'EN') {
+     setButtonText('FR');
+     switchLanguage('en');
+   } else {
+     setButtonText('EN');
+     switchLanguage('fr');
+   }
+ };
+ const { language } = useContext(LanguageContext)
   return (
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
@@ -56,9 +75,10 @@ const handleClickMail = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="#about" className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('about')}>About</Nav.Link>
-              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
-              <Nav.Link href="#team" className={activeLink === 'team' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('team')}>team</Nav.Link>
+              <Nav.Link href="#about" className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('about')}>{traduction[language].Abouttitle}</Nav.Link>
+              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>{traduction[language].ProjetTitre}</Nav.Link>
+              <Nav.Link href="#team" className={activeLink === 'team' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('team')}>{traduction[language].TitreEquipe}</Nav.Link>
+             
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
@@ -68,6 +88,10 @@ const handleClickMail = () => {
                 <a onClick={handleClickMail}><img src={navIcon4} alt="" /></a>
                 
                <button onClick={handleClickDiscord}>Discord</button>
+             
+               
+                <button onClick={handleClick}> {buttonText}</button>
+
               </div>
                          
             </span>

@@ -1,7 +1,9 @@
 
 import 'animate.css';
 
-
+import {LanguageContext} from './contextLang'
+import traduction from './traduction';
+import React, {useContext} from 'react';
 import meter1 from "../assets/MemberLogo/FreddyImg.png";
 import meter2 from "../assets/MemberLogo/DarleneImg.png";
 import meter3 from "../assets/MemberLogo/LaeticiaImg.png";
@@ -31,18 +33,18 @@ export const Contact = () => {
       items: 1
     }
   };
-
+  const { language } = useContext(LanguageContext)
   return (
     <section className="contact" id="team">
         <div className="container">
             <div className="row">
                 <div className="col-12">
                     <div className="team-bx  wow zoomIn" >
-                        <h1>Team</h1>
+                        <h1>{traduction[language].TitreEquipe}</h1>
                         <TrackVisibility>
               {({ isVisible }) =>
                         <div className={isVisible ? "animate__animated animate__pulse" : ""}> 
-                        <p>At Baobab Games, we want to reproduce historical periods unknown to the general public and the industry with the help of our Engineers, historians and our artists. Through our games, our mission is to immerse our players in universes with diverse landscapes and cultures while allowing them to get closer and have fun.</p>
+                        <p>{traduction[language].DescriptionEquipe}</p>
                         <h2></h2>
                          </div>}
                           </TrackVisibility>
@@ -53,7 +55,7 @@ export const Contact = () => {
                            <div className="cardprofile">
                            <img src={meter1} />
                            <h3>Antabon Some</h3>
-                           <p class="titleprofile">Founder & Lead Programmer</p>
+                           <p class="titleprofile">{traduction[language].FreddyDescription}</p>
                            <div className="social-icon">
                            <a href="https://www.linkedin.com/in/antabon-freddy-some-a2b1521ba"><img src={navIcon1} alt="" /></a>
                            </div>
@@ -65,7 +67,7 @@ export const Contact = () => {
                            <div className="cardprofile">
                            <img src={meter2} />
                            <h3>Darlene Acouetey</h3>
-                           <p class="titleprofile">Concept Artist</p>
+                           <p class="titleprofile">{traduction[language].DarleneDescription}</p>
                            <div className="social-icon">
                            <a href="https://www.linkedin.com/in/darlene-acouetey-29790025a/"><img src={navIcon1} alt="" /></a>
                            </div>
@@ -76,7 +78,7 @@ export const Contact = () => {
                            <div className="cardprofile">
                            <img src={meter3} />
                            <h3>Laetitia </h3>
-                           <p class="titleprofile">3D Artist</p>
+                           <p class="titleprofile">{traduction[language].LaetitiaDescription}</p>
                            <div className="social-icon">
                            <a href="https://www.linkedin.com/in/laetitia-morand-0a0767165/"><img src={navIcon1} alt="" /></a>
                            </div>

@@ -15,6 +15,9 @@ import logoDion from "../assets/img/Logo-Dion.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import {LanguageContext} from './contextLang'
+import traduction from './traduction';
+import React, {useContext} from 'react';
 
 export const Projects = () => {
 
@@ -65,20 +68,18 @@ export const Projects = () => {
       imgUrl: projImg6,
     },
   ];
-
+  const { language } = useContext(LanguageContext)
   return (
     <section className="project" id="projects">
       <Container>
         <Row>
           <Col size={12}>
           <div className="team-bx  wow zoomIn" >
-                <h1>Projects</h1>
+                <h1>{traduction[language].ProjetTitre}</h1>
                 <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__pulse": ""}>
-                <p>Baobab Games is the creator of Dion which is a multiplayer survival game set in a fantastic world inspired by West African Empires.
-
-Step into the shoes of an hunter and embark on daring raids to obtain powerful sorcery artifacts as well as technologies from other eras.</p>
+                <p>{traduction[language].DescriptionProjets}</p>
 </div>}
             </TrackVisibility>
             <TrackVisibility>

@@ -7,8 +7,13 @@ import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
 import 'animate.css';
+import {LanguageContext} from './contextLang'
+import traduction from './traduction';
+import React, {useContext} from 'react';
 import TrackVisibility from 'react-on-screen';
-export const Skills = () => {
+
+
+export const Skills = (props) => {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you dfde.
@@ -28,7 +33,7 @@ export const Skills = () => {
       items: 1
     }
   };
-
+  const { language } = useContext(LanguageContext)
   return (
     <section className="skill" id="skills">
         <div className="container">
@@ -36,11 +41,15 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                    
-                        <h1>About</h1>
+                        <h1> {traduction[language].Abouttitle}</h1>
                         <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__pulse": ""}>
-                        <p>Baobab Games is an independent video game studio working to represent cultural diversity around the world. We bring together millions of players around the world in atypical multiplayer universes by allowing them to relive moments that have marked history.</p>
+                        <p> {traduction[language].DescriptionAbout}</p>
+                        
+                       
+                       
+                       
                         </div>}
             </TrackVisibility>
                     </div>

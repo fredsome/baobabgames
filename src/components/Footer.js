@@ -6,6 +6,12 @@ import navIcon2 from "../assets/SocialIcons/twitter.svg";
 import navIcon3 from "../assets/SocialIcons/tiktok.svg";
 import navIcon4 from '../assets/SocialIcons/mail2.svg';
 import laGuilde from '../assets/imgLogo/laGuilde.png';
+import React, { useState ,useContext} from 'react';
+import {LanguageContext} from './contextLang'
+import traduction from './traduction';
+
+
+
 
 export const Footer = () => {
 
@@ -13,6 +19,8 @@ export const Footer = () => {
     window.open('mailto:support@baobabgames.group?subject=Subject&body=Body%20goes%20here');
     
     }
+    const [modalOpen, setModalOpen] = useState(false);
+    const { language } = useContext(LanguageContext)
   return (
     <footer className="footer">
       <Container>
@@ -23,7 +31,7 @@ export const Footer = () => {
         <Row>
           <Col size={8} sm={4}>
             <img src={laGuilde} alt="LaGuilde" />
-            <h3>Partners</h3>
+            <h3>{traduction[language].Partenaires}</h3>
           </Col>
           <Col size={8} sm={4}>
             <img src={logo} alt="Logo" />
@@ -36,7 +44,12 @@ export const Footer = () => {
               <a href="https://www.tiktok.com/@baobab_games?is_from_webapp=1&sender_device=pc"><img src={navIcon3} alt="Icon" /></a>
               <a onClick={handleClickMail}><img src={navIcon4} alt="" /></a>
             </div>
-            <p>Copyright © 2023 Baobab Games - All Rights Reserved.</p>
+            <div>
+
+    
+    </div>
+            
+            <p>{traduction[language].copyright}</p>
           </Col>
         </Row>
       </Container>

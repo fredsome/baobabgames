@@ -2,6 +2,10 @@ import { useState, useEffect } from "react";
 import { Col, Row, Alert } from "react-bootstrap";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import {LanguageContext} from './contextLang'
+import traduction from './traduction';
+import React, {useContext} from 'react';
+
 export const Newsletter = ({ status, message, onValidated }) => {
   const [email, setEmail] = useState('');
 
@@ -21,7 +25,7 @@ export const Newsletter = ({ status, message, onValidated }) => {
   const clearFields = () => {
     setEmail('');
   }
-
+  const { language } = useContext(LanguageContext)
   return (
       <Col lg={12}>
         <div className="newsletter-bx wow slideInUp">
@@ -30,7 +34,7 @@ export const Newsletter = ({ status, message, onValidated }) => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__pulse": ""}>
-              <h3>Subscribe to our Newsletter<br></br> & Never miss latest updates</h3>
+              <h3>{traduction[language].DescriptionNewsLetter}</h3>
               </div>}
             </TrackVisibility>
               {status === 'sending' && <Alert>Sending...</Alert>}
@@ -40,8 +44,8 @@ export const Newsletter = ({ status, message, onValidated }) => {
             <Col md={6} xl={7}>
               <form onSubmit={handleSubmit}>
                 <div className="new-email-bx">
-                  <input value={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email Address" />
-                  <button type="submit">Submit</button>
+                  <input value={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder={traduction[language].AdresseEmail} />
+                  <button type="submit">{traduction[language].BouttonSoumettre}</button>
                 </div>
               </form>
             </Col>

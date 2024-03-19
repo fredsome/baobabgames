@@ -178,6 +178,11 @@ span.navbar-text {
 .navbar-text button:hover {
   color: #121212;
 }
+.custom-legal-class {
+  
+  color: #121212;
+
+}
 .navbar-text button:hover::before {
 	content: "";
 	width: 100%;
