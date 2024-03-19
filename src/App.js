@@ -10,6 +10,7 @@ import { Footer } from "./components/Footer";
 import { Modal, Button } from 'react-bootstrap';
 import React, { useState } from 'react';
 import LanguageContextProvider from './components/contextLang';
+import { Legal } from './components/Legal';
 
 function App() {
 
@@ -30,102 +31,7 @@ function App() {
         </Modal.Header>
         <Modal.Body>
           <p>
-            This is the content of the modal.fgnnnnnnnnnnnnnnnnnnnnnnnnnn
-            nnnnnnnnnnnnnnnnnnnnnnnnnnnnntgg gnnnnnngf nnnnnnnnnnnnnnnnnn
-            nnnnnnnnnfg  egdt  gtdt g f gfhfg hgh ghgfh gfhfgfghgf hgfh h
-            nnnnnnnnnnnkhlkuljkljljk.j.jkjjljk;lhgkydujfjsdtkjhklkjljlhklg
-            vjkjkjkjkjkkkkkkkkkkkkkkkkkkkkkkkkkkjhlklkhklhklhklhklkllkhkll
-            </p>
-            <p>
-            This is the content of the modal.fgnnnnnnnnnnnnnnnnnnnnnnnnnn
-            nnnnnnnnnnnnnnnnnnnnnnnnnnnnntgg gnnnnnngf nnnnnnnnnnnnnnnnnn
-            nnnnnnnnnfg  egdt  gtdt g f gfhfg hgh ghgfh gfhfgfghgf hgfh h
-            nnnnnnnnnnnkhlkuljkljljk.j.jkjjljk;lhgkydujfjsdtkjhklkjljlhklg
-            vjkjkjkjkjkkkkkkkkkkkkkkkkkkkkkkkkkkjhlklkhklhklhklhklkllkhkll
-            </p>
-            <p>
-            This is the content of the modal.fgnnnnnnnnnnnnnnnnnnnnnnnnnn
-            nnnnnnnnnnnnnnnnnnnnnnnnnnnnntgg gnnnnnngf nnnnnnnnnnnnnnnnnn
-            nnnnnnnnnfg  egdt  gtdt g f gfhfg hgh ghgfh gfhfgfghgf hgfh h
-            nnnnnnnnnnnkhlkuljkljljk.j.jkjjljk;lhgkydujfjsdtkjhklkjljlhklg
-            vjkjkjkjkjkkkkkkkkkkkkkkkkkkkkkkkkkkjhlklkhklhklhklhklkllkhkll
-            </p>
-            <p>
-            This is the content of the modal.fgnnnnnnnnnnnnnnnnnnnnnnnnnn
-            nnnnnnnnnnnnnnnnnnnnnnnnnnnnntgg gnnnnnngf nnnnnnnnnnnnnnnnnn
-            nnnnnnnnnfg  egdt  gtdt g f gfhfg hgh ghgfh gfhfgfghgf hgfh h
-            nnnnnnnnnnnkhlkuljkljljk.j.jkjjljk;lhgkydujfjsdtkjhklkjljlhklg
-            vjkjkjkjkjkkkkkkkkkkkkkkkkkkkkkkkkkkjhlklkhklhklhklhklkllkhkll
-            </p>
-            <p>
-            This is the content of the modal.fgnnnnnnnnnnnnnnnnnnnnnnnnnn
-            nnnnnnnnnnnnnnnnnnnnnnnnnnnnntgg gnnnnnngf nnnnnnnnnnnnnnnnnn
-            nnnnnnnnnfg  egdt  gtdt g f gfhfg hgh ghgfh gfhfgfghgf hgfh h
-            nnnnnnnnnnnkhlkuljkljljk.j.jkjjljk;lhgkydujfjsdtkjhklkjljlhklg
-            vjkjkjkjkjkkkkkkkkkkkkkkkkkkkkkkkkkkjhlklkhklhklhklhklkllkhkll
-            </p>
-            <p>
-            This is the content of the modal.fgnnnnnnnnnnnnnnnnnnnnnnnnnn
-            nnnnnnnnnnnnnnnnnnnnnnnnnnnnntgg gnnnnnngf nnnnnnnnnnnnnnnnnn
-            nnnnnnnnnfg  egdt  gtdt g f gfhfg hgh ghgfh gfhfgfghgf hgfh h
-            nnnnnnnnnnnkhlkuljkljljk.j.jkjjljk;lhgkydujfjsdtkjhklkjljlhklg
-            vjkjkjkjkjkkkkkkkkkkkkkkkkkkkkkkkkkkjhlklkhklhklhklhklkllkhkll
-            </p>
-            <p>
-            This is the content of the modal.fgnnnnnnnnnnnnnnnnnnnnnnnnnn
-            nnnnnnnnnnnnnnnnnnnnnnnnnnnnntgg gnnnnnngf nnnnnnnnnnnnnnnnnn
-            nnnnnnnnnfg  egdt  gtdt g f gfhfg hgh ghgfh gfhfgfghgf hgfh h
-            nnnnnnnnnnnkhlkuljkljljk.j.jkjjljk;lhgkydujfjsdtkjhklkjljlhklg
-            vjkjkjkjkjkkkkkkkkkkkkkkkkkkkkkkkkkkjhlklkhklhklhklhklkllkhkll
-            </p>
-            <p>
-            This is the content of the modal.fgnnnnnnnnnnnnnnnnnnnnnnnnnn
-            nnnnnnnnnnnnnnnnnnnnnnnnnnnnntgg gnnnnnngf nnnnnnnnnnnnnnnnnn
-            nnnnnnnnnfg  egdt  gtdt g f gfhfg hgh ghgfh gfhfgfghgf hgfh h
-            nnnnnnnnnnnkhlkuljkljljk.j.jkjjljk;lhgkydujfjsdtkjhklkjljlhklg
-            vjkjkjkjkjkkkkkkkkkkkkkkkkkkkkkkkkkkjhlklkhklhklhklhklkllkhkll
-            </p>
-            <p>
-            This is the content of the modal.fgnnnnnnnnnnnnnnnnnnnnnnnnnn
-            nnnnnnnnnnnnnnnnnnnnnnnnnnnnntgg gnnnnnngf nnnnnnnnnnnnnnnnnn
-            nnnnnnnnnfg  egdt  gtdt g f gfhfg hgh ghgfh gfhfgfghgf hgfh h
-            nnnnnnnnnnnkhlkuljkljljk.j.jkjjljk;lhgkydujfjsdtkjhklkjljlhklg
-            vjkjkjkjkjkkkkkkkkkkkkkkkkkkkkkkkkkkjhlklkhklhklhklhklkllkhkll
-            </p>
-            <p>
-            This is the content of the modal.fgnnnnnnnnnnnnnnnnnnnnnnnnnn
-            nnnnnnnnnnnnnnnnnnnnnnnnnnnnntgg gnnnnnngf nnnnnnnnnnnnnnnnnn
-            nnnnnnnnnfg  egdt  gtdt g f gfhfg hgh ghgfh gfhfgfghgf hgfh h
-            nnnnnnnnnnnkhlkuljkljljk.j.jkjjljk;lhgkydujfjsdtkjhklkjljlhklg
-            vjkjkjkjkjkkkkkkkkkkkkkkkkkkkkkkkkkkjhlklkhklhklhklhklkllkhkll
-            </p>
-            <p>
-            This is the content of the modal.fgnnnnnnnnnnnnnnnnnnnnnnnnnn
-            nnnnnnnnnnnnnnnnnnnnnnnnnnnnntgg gnnnnnngf nnnnnnnnnnnnnnnnnn
-            nnnnnnnnnfg  egdt  gtdt g f gfhfg hgh ghgfh gfhfgfghgf hgfh h
-            nnnnnnnnnnnkhlkuljkljljk.j.jkjjljk;lhgkydujfjsdtkjhklkjljlhklg
-            vjkjkjkjkjkkkkkkkkkkkkkkkkkkkkkkkkkkjhlklkhklhklhklhklkllkhkll
-            </p>
-            <p>
-            This is the content of the modal.fgnnnnnnnnnnnnnnnnnnnnnnnnnn
-            nnnnnnnnnnnnnnnnnnnnnnnnnnnnntgg gnnnnnngf nnnnnnnnnnnnnnnnnn
-            nnnnnnnnnfg  egdt  gtdt g f gfhfg hgh ghgfh gfhfgfghgf hgfh h
-            nnnnnnnnnnnkhlkuljkljljk.j.jkjjljk;lhgkydujfjsdtkjhklkjljlhklg
-            vjkjkjkjkjkkkkkkkkkkkkkkkkkkkkkkkkkkjhlklkhklhklhklhklkllkhkll
-            </p>
-            <p>
-            This is the content of the modal.fgnnnnnnnnnnnnnnnnnnnnnnnnnn
-            nnnnnnnnnnnnnnnnnnnnnnnnnnnnntgg gnnnnnngf nnnnnnnnnnnnnnnnnn
-            nnnnnnnnnfg  egdt  gtdt g f gfhfg hgh ghgfh gfhfgfghgf hgfh h
-            nnnnnnnnnnnkhlkuljkljljk.j.jkjjljk;lhgkydujfjsdtkjhklkjljlhklg
-            vjkjkjkjkjkkkkkkkkkkkkkkkkkkkkkkkkkkjhlklkhklhklhklhklkllkhkll
-            </p>
-            <p>
-            This is the content of the modal.fgnnnnnnnnnnnnnnnnnnnnnnnnnn
-            nnnnnnnnnnnnnnnnnnnnnnnnnnnnntgg gnnnnnngf nnnnnnnnnnnnnnnnnn
-            nnnnnnnnnfg  egdt  gtdt g f gfhfg hgh ghgfh gfhfgfghgf hgfh h
-            nnnnnnnnnnnkhlkuljkljljk.j.jkjjljk;lhgkydujfjsdtkjhklkjljlhklg
-            vjkjkjkjkjkkkkkkkkkkkkkkkkkkkkkkkkkkjhlklkhklhklhklhklkllkhkll
+            <Legal/>
             </p>
         </Modal.Body>
        
