@@ -13,7 +13,7 @@ const traduction = {
        FreddyDescription: "Fondateur & Directeur Technique",
        LaetitiaDescription:"Artiste 3d",
        DarleneDescription:"Artiste 2d" ,
-       AdresseEmail:"Adresse Email",
+       AdresseEmail:"Email",
        LegalPart1:"Nous sommes Baobab Games. Lorsque vous utilisez l'un de nos services, vous nous confiez vos informations. La protection des données personnelles et de votre vie privée est la plus grande priorité de Baobab Games.\n"+
        "Nous avons à cœur de vous fournir des informations claires et transparentes sur les données personnelles que nous recueillons, les raisons pour lesquelles elles sont nécessaires, la façon dont elles sont utilisées et vos droits les concernant.",
        LegalSoustitre2:"Qui est responsable de traiter vos données personnelles?\n",
@@ -29,7 +29,13 @@ const traduction = {
        LegalPart6:"Si nécessaire, vos données personnelles peuvent être communiquées au sein Baobab Games, à des fournisseurs, à des sous-traitants et à des tiers indépendants effectuant certaines tâches en notre nom.",
        LegalSoustitre7:"Quels sont vos droits?\n",
        LegalPart7:"Vous avez le droit d'accéder à vos données personnelles, de les rectifier, de les supprimer et de les consulter. Dans certains cas, vous avez également le droit de vous opposer à ce que nous les utilisions ou que nous les transférions.Vous pouvez exercer votre droit à l’accessibilité, à la transférabilité et à la rectification en nous contactant directement , en écrivant a support@baobabgames.group",
+       PubTitle:"Inscription",
+       PubSubtitle:"Restez au courant des dernieres nouveautés de DION!",
+       PubSubtitle2:"En soumettant ce formulaire, vous acceptez de recevoir des emails concernant les activités de Baobab Games à l'adresse renseignée. " 
+       +"Vous ferez partie des tout premiers à connaître les nouveautés sur le dernier jeu en production chez Baobab Games. ",
      
+
+       Confidentialite:"politique de confidentialité",
 },  
     en:{
         Abouttitle: "About",
@@ -61,6 +67,14 @@ const traduction = {
   LegalPart6:"If necessary, your personal data may be disclosed within Baobab Games, to suppliers, subcontractors, and independent third parties performing certain tasks on our behalf.",
   LegalSoustitre7:"What are your rights?",
   LegalPart7:"You have the right to access, rectify, delete, and consult your personal data. In some cases, you also have the right to object to us using or transferring them. You can exercise your right to accessibility, transferability, and rectification by contacting us directly, by writing to support@baobabgames.group.",
+
+  PubTitle:"Registration",
+  PubSubtitle:"Stay up to date with the latest news from DION!",
+  PubSubtitle2:"By submitting this form, you agree to receive emails regarding Baobab Games activities at the provided address."
+  +"You will be among the very first to know about the latest updates on the newest game in production at Baobab Games. ",
+
+  Confidentialite:"Privacy Policy",
+  Fermer:"Fermer",
 }
 
 }

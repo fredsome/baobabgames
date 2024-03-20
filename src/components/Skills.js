@@ -46,10 +46,7 @@ export const Skills = (props) => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__pulse": ""}>
                         <p> {traduction[language].DescriptionAbout}</p>
-                        
-                       
-                       
-                       
+         
                         </div>}
             </TrackVisibility>
                     </div>

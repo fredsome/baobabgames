@@ -6,9 +6,10 @@ import {LanguageContext} from './contextLang'
 import traduction from './traduction';
 import React, {useContext} from 'react';
 
+
 export const Newsletter = ({ status, message, onValidated }) => {
   const [email, setEmail] = useState('');
-
+  const { language } = useContext(LanguageContext)
   useEffect(() => {
     if (status === 'success') clearFields();
   }, [status])
@@ -25,7 +26,7 @@ export const Newsletter = ({ status, message, onValidated }) => {
   const clearFields = () => {
     setEmail('');
   }
-  const { language } = useContext(LanguageContext)
+
   return (
       <Col lg={12}>
         <div className="newsletter-bx wow slideInUp">
