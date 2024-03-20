@@ -35,7 +35,7 @@ function App() {
       
       
 
-      <Modal show={showModalPub} onHide={handleClosePub} dialogClassName="custom-legal-class"  style={{ marginTop: '5%' , maxHeight: '100vh'}}>
+      <Modal show={showModalPub} onHide={handleClosePub} dialogClassName="custom-legal-class"  style={{ marginTop: '7%' , maxHeight: '100vh'}}>
      
         <Modal.Dialog >
         
