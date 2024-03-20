@@ -1,11 +1,11 @@
 const traduction = { 
     fr: {
           Abouttitle: "À propos",
-          DescriptionAbout: "Baobab Games est un studio de jeux vidéo indépendant qui œuvre pour représenter la diversité culturelle à travers le monde. Nous réunissons des millions de joueurs à travers le monde dans des univers multijoueurs atypiques en leur permettant de revivre des moments qui ont marqué l'histoire.",
+          DescriptionAbout: "Baobab Games est un studio de jeux vidéo indépendant qui œuvre pour représenter la diversité culturelle du monde entier. Nous réunissons des millions de joueurs à travers le monde dans des univers multijoueurs atypiques en leur permettant de revivre des moments qui ont marqué l'histoire.",
           ProjetTitre: "Projets",
-          DescriptionProjets: "Baobab Games est le créateur de Dion, un jeu de survie multijoueur se déroulant dans un monde fantastique inspiré des empires d'Afrique de l'Ouest. Mettez-vous dans la peau d'un chasseur et lancez-vous dans des raids audacieux pour obtenir de puissants artefacts de sorcellerie ainsi que des technologies d'autres époques.",
+          DescriptionProjets: "Baobab Games est le studio derrière Dion, un jeu de survie multijoueur se déroulant dans un monde fantastique inspiré des empires d'Afrique de l'Ouest. Mettez-vous dans la peau d'un chasseur et lancez-vous dans des raids audacieux pour obtenir de puissants artefacts de sorcellerie ainsi que des technologies provénant de plusieurs époques",
           TitreEquipe: "Équipe",
-          DescriptionEquipe:"Chez Baobab Games, nous souhaitons reproduire des périodes historiques méconnues du grand public et de l'industrie avec l'aide de nos ingénieurs, historiens et de nos artistes. A travers nos jeux, notre mission est de plonger nos joueurs dans des univers aux paysages et cultures diversifiés tout en leur permettant de se rapprocher et de s'amuser.",
+          DescriptionEquipe:"Chez Baobab Games, nous souhaitons reproduire des périodes historiques méconnues du grand public et de l'industrie avec l'aide de nos ingénieurs, historiens et de nos artistes. À travers nos jeux, notre mission est de plonger nos joueurs dans des univers aux paysages et cultures diversifiés tout en leur permettant de se rapprocher et de s'amuser.",
     DescriptionNewsLetter:"Abonnez-vous à notre newsletter et ne manquez jamais les dernières mises à jour",
     BouttonSoumettre:"Soumettre",
     Partenaires:"Les partenaires",
